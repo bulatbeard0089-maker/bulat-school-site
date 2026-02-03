@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <title>Контакты — Школа тренеров Булата Зарипова</title>
+  <meta name="description" content="Связь и форма заявки.">
+  
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+
+</head>
+<body>
+
+<div class="grid-bg" aria-hidden="true"></div>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Школа тренеров — на главную">
+      <img class="brand-logo" src="assets/img/ano-logo.jpg" alt="Логотип АНО ДПО" />
+      <span class="brand-text">
+        <span class="brand-title">Школа тренеров Булата Зарипова</span>
+        <span class="brand-sub">АНО ДПО • обучение • спорт • реабилитация</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="about.html">О нас</a>
+      <a href="services.html">Услуги</a>
+      <a href="projects.html">Проекты</a>
+      <a href="news.html">Новости</a>
+      <a class="btn btn-sm btn-primary" href="contacts.html#request">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<div class="container">
+  <div class="breadcrumbs"><a href="index.html">главная</a> → контакты</div>
+  <div class="page-title">
+    <h1>Контакты</h1>
+    <p>Оставь заявку — и мы предложим следующий шаг. Для партнёрств тоже сюда.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="cards cols-2">
+      <div class="card" id="address">
+        <div class="meta">площадка</div>
+        <h3>Уфа, ул. Гафури, 11</h3>
+        <p>Очно: зал/площадка (клуб «Титан»). Время лучше согласовать заранее.</p>
+        <div class="card-actions">
+          <a class="btn btn-sm btn-ghost" href="https://yandex.ru/maps/" target="_blank" rel="noreferrer">Открыть карту</a>
+          <a class="btn btn-sm btn-primary" href="#request">Оставить заявку</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="meta">связь</div>
+        <h3>Телефон / мессенджеры</h3>
+        <p>Телефон: <a href="tel:+79996223511"><strong>+7 (999) 622-35-11</strong></a></p>
+        <p class="muted">Email: <a href="mailto:bullfitufa@yandex.ru"><strong>bullfitufa@yandex.ru</strong></a></p>
+        <p class="muted">Юр. адрес: Республика Башкортостан, г. Уфа, ул. Менделеева, д. 134/7</p>
+        <p id="tg" class="muted">Соцсети: <strong><a href="https://vk.com/" target="_blank" rel="noreferrer">Группа ВКонтакте</a></strong></p>
+        <p class="note">Замените на реальный TG-канал/контакт.</p>
+      </div>
+    </div>
+
+    <div class="section" id="request" style="padding-bottom:0">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Заявка</h2>
+          <p class="section-desc">Коротко опиши, что нужно, и как с тобой связаться.</p>
+        </div>
+      </div>
+
+      <div class="cards cols-2">
+        <div class="card">
+          <div class="meta">форма</div>
+          <form class="form" data-contact-form>
+            <div class="field">
+              <label for="name">имя</label>
+              <input id="name" name="name" required placeholder="Например: Иван" />
+            </div>
+            <div class="field">
+              <label for="contact">контакт</label>
+              <input id="contact" name="contact" required placeholder="+7… или @username" />
+            </div>
+            <div class="field">
+              <label for="topic">тема</label>
+              <select id="topic" name="topic">
+                <option>Обучение / школа</option>
+                <option>Проект «Сильные Люди»</option>
+                <option>Партнёрство / поддержка</option>
+                <option>Другое</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="msg">сообщение</label>
+              <textarea id="msg" name="message" required placeholder="Коротко: задача, ограничения, формат, сроки."></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Отправить</button>
+            <div class="note" data-form-status></div>
+
+            <div class="note">
+              ⚙️ Для Netlify Forms: добавьте к &lt;form&gt; атрибуты <strong>name</strong> и <strong>netlify</strong>,
+              и hidden input <strong>form-name</strong>. Сейчас форма — демо.
+            </div>
+          </form>
+        </div>
+
+        <div class="card" id="partners">
+          <div class="meta">партнёрам</div>
+          <h3>Чем можно усилить проект</h3>
+          <p>Напиши, что готов закрыть — и соберём модель взаимодействия:</p>
+          <ul class="muted" style="margin:10px 0 0; padding-left:18px; font-size:13px">
+            <li>площадка / время зала</li>
+            <li>оборудование / расходники</li>
+            <li>видеопродакшн / контент</li>
+            <li>подписка и сопровождение платформы (GetCourse)</li>
+            <li>логистика участников</li>
+          </ul>
+          <div class="card-actions">
+            <a class="btn btn-sm btn-primary" href="tel:+79996223511">Позвонить</a>
+            <a class="btn btn-sm btn-ghost" href="#tg">Написать в TG</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-title">АНО ДПО «Школа тренеров Булата Зарипова»</div>
+        <p class="muted">Обучение тренеров, методическая база, практическая подготовка. Социальные проекты — отдельным направлением.</p>
+        <div class="tag">⬛ brutal • clean • no bullshit</div>
+      </div>
+      <div>
+        <div class="footer-title">Навигация</div>
+        <div class="muted" style="display:grid; gap:8px; margin-top:10px">
+          <a href="about.html">О нас</a>
+          <a href="services.html">Услуги</a>
+          <a href="projects.html">Проекты</a>
+          <a href="news.html">Новости</a>
+          <a href="contacts.html">Контакты</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">Связь</div>
+        <div class="muted" style="display:grid; gap:8px; margin-top:10px">
+          <a href="tel:+79996223511">+7 (999) 622-35-11</a>
+          <a href="contacts.html#tg">Группа ВКонтакте</a>
+          <a href="contacts.html#address">Уфа • ул. Гафури, 11</a>
+        </div>
+      </div>
+    </div>
+    <hr class="sep" />
+    <div class="muted" style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap">
+      <div>© <span id="year"></span> • BZ</div>
+      <div>Сайт-лендинг. Информация носит справочный характер.</div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+
+</body>
+</html>
